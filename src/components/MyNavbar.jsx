@@ -1,5 +1,6 @@
 import { Component } from 'react';
-import { Search, Bell, PersonCircle } from 'react-bootstrap-icons';
+import { NavbarBrand } from 'react-bootstrap';
+import { Search, Bell } from 'react-bootstrap-icons';
 import Navbar from 'react-bootstrap/Navbar';
 
 class MyNavbar extends Component {
@@ -22,38 +23,41 @@ class MyNavbar extends Component {
           <Navbar.Collapse id='navbarSupportedContent'>
             <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
               <li className='nav-item'>
-                <a className='nav-link active fw-bold' href='#'>
+                <a className='nav-link active fw-bolder' href='#'>
                   Home
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link fw-bold' href='#'>
+                <a className='nav-link fw-normal' href='#'>
                   TV Shows
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link fw-bold' href='#'>
+                <a className='nav-link fw-normal' href='#'>
                   Movies
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link fw-bold' href='#'>
+                <a className='nav-link fw-normal' href='#'>
                   Recently Added
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link fw-bold' href='#'>
+                <a className='nav-link fw-normal' href='#'>
                   My List
                 </a>
               </li>
             </ul>
             <div className='d-flex align-items-center'>
               <Search className='icons'></Search>
-              <div id='kids' className='fw-bold'>
+              <div id='kids' className='fw-normal'>
                 KIDS
               </div>
               <Bell className='icons'></Bell>
-              <PersonCircle className='icons'></PersonCircle>
+              <NavbarBrand href='#'><img
+              src='../../public/assets/media/avatar.png'
+              style={{ width: '28px' }}
+            /></NavbarBrand>
             </div>
           </Navbar.Collapse>
         </div>
