@@ -56,7 +56,7 @@ class MyNavbar extends Component {
               <Bell className='icons'></Bell>
               <NavbarBrand href='#'><img
               src='../../public/assets/media/avatar.png'
-              style={{ width: '28px' }}
+              style={{ width: '40px' }}
             /></NavbarBrand>
             </div>
           </Navbar.Collapse>

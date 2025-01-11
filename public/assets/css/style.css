@@ -109,3 +109,9 @@ footer {
     color: var(--bs-black);
     border-color: var(--bs-black);
   }
+
+  /* SettingsPage */
+
+  .settings {
+    background-color: white;
+  }

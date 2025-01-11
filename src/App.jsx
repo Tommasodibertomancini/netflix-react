@@ -3,6 +3,7 @@ import '../public/assets/css/style.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import HomePage from './components/Homepage';
 import ProfilePage from './components/ProfilePage';
+import SettingsPage from './components/SettingsPage';
 
 
 
@@ -11,6 +12,7 @@ function App() {
     <>
     <HomePage />
     <ProfilePage />
+    <SettingsPage />
     </>
   );
 }

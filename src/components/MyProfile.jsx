@@ -9,7 +9,7 @@ class MyProfile extends Component {
     return (
       <>
         <main>
-          <div className='container-fluid text-secondary'>
+          <div className='container-fluid text-secondary profile'>
             <div className='row justify-content-center'>
               <div className='col-4'></div>
               <div className='col-4 mb-5'>
