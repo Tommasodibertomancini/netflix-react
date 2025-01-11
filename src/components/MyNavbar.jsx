@@ -15,7 +15,7 @@ class MyNavbar extends Component {
           <Navbar.Brand href='#'>
             <img
               src='../../public/assets/media/logo.png'
-              style={{ width: '100px', height: '50px' }}
+              style={{ width: '100px', height: '55px' }}
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbarScroll' />

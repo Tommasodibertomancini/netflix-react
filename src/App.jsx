@@ -1,15 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../public/assets/css/style.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import MyNavbar from './components/MyNavbar';
-import MyFooter from './components/MyFooter';
+import HomePage from './components/Homepage';
+
 
 
 function App() {
   return (
     <>
-      <MyNavbar />
-      <MyFooter />
+    <HomePage />
     </>
   );
 }
