@@ -42,10 +42,10 @@ class MyHome extends Component {
                     Genres&nbsp;
                   </Dropdown.Toggle>
 
-                  <Dropdown.Menu>
-                    <Dropdown.Item href='#'>SuperHeroes</Dropdown.Item>
-                    <Dropdown.Item href='#'>Romantic</Dropdown.Item>
-                    <Dropdown.Item href='#'>Comedy</Dropdown.Item>
+                  <Dropdown.Menu className='item'>
+                    <Dropdown.Item className='text-light' href='#'>SuperHeroes</Dropdown.Item>
+                    <Dropdown.Item className='text-light' href='#'>Romantic</Dropdown.Item>
+                    <Dropdown.Item className='text-light' href='#'>Comedy</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </div>

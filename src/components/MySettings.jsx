@@ -24,13 +24,13 @@ class MySettings extends Component {
               </div>
               <div className='col-6 text-end'>
                 <p>
-                  <a href='#'>Change account email</a>
+                  <a href='javascript:void(0)'>Change account email</a>
                 </p>
                 <p>
-                  <a href='#'>Change password</a>
+                  <a href='javascript:void(0)'>Change password</a>
                 </p>
                 <p>
-                  <a href='#'>Change phone number</a>
+                  <a href='javascript:void(0)'>Change phone number</a>
                 </p>
               </div>
               <hr />
@@ -46,16 +46,16 @@ class MySettings extends Component {
               </div>
               <div className='col-7 text-end'>
                 <p>
-                  <a href='#'>Update payment info</a>
+                  <a href='javascript:void(0)'>Update payment info</a>
                 </p>
                 <p>
-                  <a href='#'>Billing details</a>
+                  <a href='javascript:void(0)'>Billing details</a>
                 </p>
                 <p>
-                  <a href='#'>Redeem giftcard or promo code</a>
+                  <a href='javascript:void(0)'>Redeem giftcard or promo code</a>
                 </p>
                 <p>
-                  <a href='#'>Where to buy gift cards?</a>
+                  <a href='javascript:void(0)'>Where to buy gift cards?</a>
                 </p>
               </div>
             </div>
@@ -75,7 +75,7 @@ class MySettings extends Component {
               </div>
               <div className='col-6 text-end'>
                 <p>
-                  <a href='#'>Change plan</a>
+                  <a href='javascript:void(0)'>Change plan</a>
                 </p>
               </div>
             </div>
@@ -87,22 +87,22 @@ class MySettings extends Component {
             </div>
             <div className='col-12 col-md-8 mb3'>
               <p>
-                <a href='#'>Parental Controls</a>
+                <a href='javascript:void(0)'>Parental Controls</a>
               </p>
               <p>
-                <a href='#'>Test Participation</a>
+                <a href='javascript:void(0)'>Test Participation</a>
               </p>
               <p>
-                <a href='#'>Manage download devices</a>
+                <a href='javascript:void(0)'>Manage download devices</a>
               </p>
               <p>
-                <a href='#'>Activate a device</a>
+                <a href='javascript:void(0)'>Activate a device</a>
               </p>
               <p>
-                <a href='#'>Recent device streaming activity</a>
+                <a href='javascript:void(0)'>Recent device streaming activity</a>
               </p>
               <p>
-                <a href='#'>Signout all devices</a>
+                <a href='javascript:void(0)'>Signout all devices</a>
               </p>
             </div>
           </div>
@@ -121,15 +121,15 @@ class MySettings extends Component {
                         alt='avatarAccount'
                         id='avatar'
                       />
-                    &nbsp;&nbsp;Epicoder#1
+                    &nbsp;&nbsp;Epicoder #1
                   </p>
                 </div>
                 <div className='col-6 text-end'>
                   <p>
-                    <a href='#'>Manage Profiles</a>
+                    <a href='javascript:void(0)'>Manage Profiles</a>
                   </p>
                   <p>
-                    <a href='#'>Add profile email</a>
+                    <a href='javascript:void(0)'>Add profile email</a>
                   </p>
                 </div>
               </div>
@@ -137,21 +137,21 @@ class MySettings extends Component {
               <div className='row'>
                 <div className='col-12 col-md-4'>
                   <p>
-                    <a href='#'>Language</a>
+                    <a href='javascript:void(0)'>Language</a>
                   </p>
                   <p>
-                    <a href='#'>Playback settings</a>
+                    <a href='javascript:void(0)'>Playback settings</a>
                   </p>
                   <p>
-                    <a href='#'>Subtitle appearence</a>
+                    <a href='javascript:void(0)'>Subtitle appearence</a>
                   </p>
                 </div>
                 <div className='col-12 col-md-4'>
                   <p>
-                    <a href='#'>Viewing activity</a>
+                    <a href='javascript:void(0)'>Viewing activity</a>
                   </p>
                   <p>
-                    <a href='#'>Ratings</a>
+                    <a href='javascript:void(0)'>Ratings</a>
                   </p>
                 </div>
               </div>
