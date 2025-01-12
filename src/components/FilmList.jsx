@@ -67,7 +67,7 @@ class FilmList extends Component {
                   onClick={this.handlePrevious}
                   role="button"
                 >
-                  <ChevronLeft size={40} color="white" />
+                  <ChevronLeft size={30} color="white" />
                 </div>
                 
                 {currentFilms.map((film) => (
@@ -93,7 +93,7 @@ class FilmList extends Component {
                   onClick={this.handleNext}
                   role="button"
                 >
-                  <ChevronRight size={40} color="white" />
+                  <ChevronRight size={30} color="white" />
                 </div>
               </div>
             </Row>

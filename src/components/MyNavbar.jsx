@@ -14,7 +14,7 @@ class MyNavbar extends Component {
         style={{ backgroundColor: '#221f1f' }}
       >
         <div className='container-fluid'>
-          <Navbar.Brand href='#'>
+          <Navbar.Brand href='javascript:void(0)' onClick={() => handleChangePage(1)}>
             <img
               src='../../public/assets/media/logo.png'
               style={{ width: '100px', height: '55px' }}
@@ -71,8 +71,7 @@ class MyNavbar extends Component {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu className='dropdown-menu-lg-end bg-black rounded-0'>
-                  <Dropdown.Item
-                    href='netflixProfile.html'
+                  <Dropdown.Item onClick={() => handleChangePage(1)}
                     className='d-flex align-items-center'
                   >
                     <Image
