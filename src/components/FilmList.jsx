@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { Row, Col, Alert } from 'react-bootstrap';
-import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons'; // Aggiungiamo le icone di Next/Previous
+import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons'; 
 
 const URL = 'http://www.omdbapi.com/?apikey=566ef110&s=';
 
@@ -8,7 +8,7 @@ class FilmList extends Component {
   state = {
     filmList: [],
     errorMessage: '',
-    currentIndex: 0, // Indice per scorrere i film
+    currentIndex: 0, 
     filmsPerPage: 6,
   };
 
@@ -59,6 +59,7 @@ class FilmList extends Component {
       <>
         {this.props.isLoaded && this.state.errorMessage === '' && (
           <>
+          <h4 className='text-light'>{this.props.title}</h4>
             <Row className='filmList mb-4'>
               <div className="d-flex overflow-auto position-relative">
                 <div
