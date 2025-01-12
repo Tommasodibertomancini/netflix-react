@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import { Row, Col, Alert } from 'react-bootstrap';
-
-import '../../public/assets/css/style.css';
+import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons'; // Aggiungiamo le icone di Next/Previous
 
 const URL = 'http://www.omdbapi.com/?apikey=566ef110&s=';
 
@@ -9,6 +8,8 @@ class FilmList extends Component {
   state = {
     filmList: [],
     errorMessage: '',
+    currentIndex: 0, // Indice per scorrere i film
+    filmsPerPage: 6,
   };
 
   errorBlock = (
@@ -35,21 +36,45 @@ class FilmList extends Component {
     this.getFilmList();
   }
 
+  handleNext = () => {
+    const { filmList, currentIndex, filmsPerPage } = this.state;
+    const totalFilms = filmList.length;
+    if (currentIndex + filmsPerPage < totalFilms) {
+      this.setState((prevState) => ({ currentIndex: prevState.currentIndex + filmsPerPage }));
+    }
+  };
+
+  handlePrevious = () => {
+    const { currentIndex, filmsPerPage } = this.state;
+    if (currentIndex - filmsPerPage >= 0) {
+      this.setState((prevState) => ({ currentIndex: prevState.currentIndex - filmsPerPage }));
+    }
+  };
+
   render() {
+    const { filmList, currentIndex, filmsPerPage } = this.state;
+    const currentFilms = filmList.slice(currentIndex, currentIndex + filmsPerPage);
+
     return (
       <>
         {this.props.isLoaded && this.state.errorMessage === '' && (
-          <h4>{this.props.title}</h4>
-        )}
-
-        {this.props.isLoaded && this.state.errorMessage === '' && (
-          <Row className='filmList mb-4'>
-            {this.state.filmList.map((film, i) => {
-              if (i < 6) {
-                return (
+          <>
+            <Row className='filmList mb-4'>
+              <div className="d-flex overflow-auto position-relative">
+                <div
+                  className="position-absolute top-50 start-0 translate-middle-y"
+                  style={{ left: '10px', zIndex: 10 }}
+                  onClick={this.handlePrevious}
+                  role="button"
+                >
+                  <ChevronLeft size={40} color="white" />
+                </div>
+                
+                {currentFilms.map((film) => (
                   <Col
                     sm={6}
                     md={4}
+                    lg={3}
                     xl={2}
                     key={film.imdbID}
                     className='singleFilm mb-2 px-1'
@@ -60,14 +85,23 @@ class FilmList extends Component {
                       className='filmPoster'
                     />
                   </Col>
-                );
-              }
-            })}
-          </Row>
+                ))}
+
+                <div
+                  className="position-absolute top-50 end-0 translate-middle-y"
+                  style={{ right: '10px', zIndex: 10 }}
+                  onClick={this.handleNext}
+                  role="button"
+                >
+                  <ChevronRight size={40} color="white" />
+                </div>
+              </div>
+            </Row>
+          </>
         )}
 
         {this.props.isLoaded &&
-          this.state.errorMessage != '' &&
+          this.state.errorMessage !== '' &&
           this.errorBlock}
       </>
     );

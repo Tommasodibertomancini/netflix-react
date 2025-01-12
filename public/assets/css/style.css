@@ -66,6 +66,8 @@ footer {
 
 .singleFilm {
   height: 300px;
+  overflow: hidden;
+  position: relative;
 }
 
 .filmPoster {
@@ -74,51 +76,70 @@ footer {
   height: 100%;
   max-width: 200px;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  opacity: 0.8;
 }
 
 .filmPoster:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.3);
+  opacity: 1;
 }
+
+.position-absolute {
+    position: absolute;
+  }
+  
+  .translate-middle-y {
+    transform: translateY(-50%);
+  }
+  
+  .filmList {
+    position: relative;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button {
+    border: none;
+  }
+  
 
 /* ProfilePage */
 
 .form-check:checked,
 .form-check,
 .form-check:focus {
-
-    background-color: transparent;
-    border: 1px solid #6c757d;
-    box-shadow: none;
-    border-radius: 0;
- 
+  background-color: transparent;
+  border: 1px solid #6c757d;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 #avatarProfile {
-    width: 70%;
+  width: 70%;
 }
 
 .customText {
-    background-color: var(--bs-secondary);
-    color: var(--bs-white);
-    border: 1px solid var(--bs-secondary);
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .customText:focus {
-    background-color: var(--bs-white);
-    color: var(--bs-black);
-    border-color: var(--bs-black);
-  }
+  background-color: var(--bs-secondary);
+  color: var(--bs-white);
+  border: 1px solid var(--bs-secondary);
+  transition: background-color 0.3s, color 0.3s;
+}
 
-  /* SettingsPage */
+.customText:focus {
+  background-color: var(--bs-white);
+  color: var(--bs-black);
+  border-color: var(--bs-black);
+}
 
-  .settings {
-    background-color: white;
-  }
+/* SettingsPage */
 
-  .item {
-    background-color: #221f1f;
-  }
+.settings {
+  background-color: white;
+}
 
-
-  
+.item {
+  background-color: #221f1f;
+}
