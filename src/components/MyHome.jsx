@@ -3,6 +3,7 @@ import { Dropdown, Container, Spinner } from 'react-bootstrap';
 import { Grid, Grid3x3 } from 'react-bootstrap-icons';
 import FilmList from './FilmList';
 
+
 class Main extends Component {
   state = {
     isLoading: true,

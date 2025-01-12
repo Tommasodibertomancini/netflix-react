@@ -39,7 +39,7 @@ footer {
 }
 
 .footer-links {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .footer-links p {
@@ -72,7 +72,7 @@ footer {
   display: block;
   margin: 0 auto;
   height: 100%;
-  max-width: 190px;
+  max-width: 200px;
   cursor: pointer;
 }
 

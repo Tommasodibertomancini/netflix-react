@@ -49,7 +49,7 @@ class FilmList extends Component {
                 return (
                   <Col
                     sm={6}
-                    lg={3}
+                    md={4}
                     xl={2}
                     key={film.imdbID}
                     className='singleFilm mb-2 px-1'
