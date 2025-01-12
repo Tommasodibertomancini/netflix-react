@@ -5,7 +5,7 @@ import '../../public/assets/css/style.css';
 
 const URL = 'http://www.omdbapi.com/?apikey=566ef110&s=';
 
-class FilmsList extends Component {
+class FilmList extends Component {
   state = {
     filmList: [],
     errorMessage: '',
@@ -13,7 +13,7 @@ class FilmsList extends Component {
 
   errorBlock = (
     <Alert variant='danger' dismissible>
-      <Alert.Heading>Something Wrong!</Alert.Heading>
+      <Alert.Heading>❌ You got an error!</Alert.Heading>
     </Alert>
   );
 
@@ -24,7 +24,7 @@ class FilmsList extends Component {
         const data = await response.json();
         this.setState({ filmList: data.Search, isLoading: false });
       } else {
-        throw new Error("API non letta");
+        throw new Error("❌ Errore nella lettura dell'API");
       }
     } catch (error) {
       this.setState({ errorMessage: error });
@@ -74,4 +74,4 @@ class FilmsList extends Component {
   }
 }
 
-export default FilmsList;
+export default FilmList;

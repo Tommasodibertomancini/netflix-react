@@ -3,7 +3,7 @@ import { Dropdown, Container, Spinner } from 'react-bootstrap';
 import { Grid, Grid3x3 } from 'react-bootstrap-icons';
 import FilmList from './FilmList';
 
-class MyHome extends Component {
+class Main extends Component {
   state = {
     isLoading: true,
   };
@@ -43,9 +43,9 @@ class MyHome extends Component {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className='item'>
-                    <Dropdown.Item className='text-light' href='#'>SuperHeroes</Dropdown.Item>
-                    <Dropdown.Item className='text-light' href='#'>Romantic</Dropdown.Item>
-                    <Dropdown.Item className='text-light' href='#'>Comedy</Dropdown.Item>
+                    <Dropdown.Item className='text-light fw-normal' href='#'>SuperHeroes</Dropdown.Item>
+                    <Dropdown.Item className='text-light fw-normal' href='#'>Comedy</Dropdown.Item>
+                    <Dropdown.Item className='text-light fw-normal' href='#'>Drama</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </div>
@@ -71,7 +71,7 @@ class MyHome extends Component {
 
         <FilmList
           title='New Releases'
-          query='Lion King'
+          query='The Lion King'
           isLoaded={!this.state.isLoading}
         />
       </Container>
@@ -79,4 +79,4 @@ class MyHome extends Component {
   }
 }
 
-export default MyHome;
+export default Main;
